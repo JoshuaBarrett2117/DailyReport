@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# cron:0 0/1 * * *
 # new Env("爱Q生活网")
 
 import requests
