@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # cron:0 0/1 * * *
 # new Env("爱Q生活网")
-
 import requests
 from lxml import etree
 
@@ -48,3 +47,4 @@ if __name__ == '__main__':
     i_qshow = IQshow()
     all_news = i_qshow.get_all_news_body()
     print(all_news)
+    QLAPI.notify('爱Q生活网', all_news)
