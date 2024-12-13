@@ -1,4 +1,8 @@
 # -*- coding: utf-8 -*-
+#!/usr/bin/env python3
+# cron:0 0/1 * * *
+# new Env("大姨妈提示")
+
 import json
 import math
 import time

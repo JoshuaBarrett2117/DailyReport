@@ -49,4 +49,3 @@ if __name__ == '__main__':
     all_news = i_qshow.get_all_news_body()
     print(all_news)
     IJingNiu.send(all_news)
-    QLAPI.notify('爱Q生活网', all_news)
