@@ -4,6 +4,8 @@
 import requests
 from lxml import etree
 
+from daily_job.test import test_get_news_body
+
 
 class IQshow(object):
     def __init__(self) -> None:
@@ -41,6 +43,7 @@ class IQshow(object):
 
 
 if __name__ == '__main__':
+    test_get_news_body()
     i_qshow = IQshow()
     all_news = i_qshow.get_all_news_body()
     print(all_news)
