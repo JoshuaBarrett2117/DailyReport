@@ -4,6 +4,7 @@
 import requests
 from lxml import etree
 
+from util.ijingniu import IJingNiu
 from util.test import test_get_news_body
 
 
@@ -47,4 +48,5 @@ if __name__ == '__main__':
     i_qshow = IQshow()
     all_news = i_qshow.get_all_news_body()
     print(all_news)
+    IJingNiu.send(all_news)
     QLAPI.notify('爱Q生活网', all_news)
