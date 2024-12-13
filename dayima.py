@@ -5,6 +5,7 @@
 
 import json
 import math
+import os
 import time
 
 import requests
@@ -57,5 +58,6 @@ class DayimaCheckIn(object):
         return msg
 
 
-# check_in = DayimaCheckIn("275918897-c56a6c27d221ec7efc7b63ab65216b3e")
-# check_in.main()
+if __name__ == "__main__":
+    check_in = DayimaCheckIn(os.getenv("DAYIMA_TOKEN"))
+    check_in.main()
