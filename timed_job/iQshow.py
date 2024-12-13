@@ -4,7 +4,7 @@
 import requests
 from lxml import etree
 
-from daily_job.test import test_get_news_body
+from util.test import test_get_news_body
 
 
 class IQshow(object):
