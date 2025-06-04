@@ -54,7 +54,7 @@ class DayimaCheckIn(object):
         next_time_day = (time_stamp - time_time) / 60 / 60 / 24
         next_time_day = math.ceil(next_time_day)
         msg = f"距离经期还有{next_time_day}天\n\n大姨妈日：{strftime}"
-
+        print(msg)
         return msg
 
 
