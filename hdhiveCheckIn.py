@@ -4,6 +4,7 @@
 # new Env("影巢签到")
 
 import json
+import os
 
 import requests
 
@@ -39,8 +40,6 @@ class HdhiveCheckIn(object):
 
 
 if __name__ == "__main__":
-    check_in = HdhiveCheckIn(
-        f'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc0ODg0MTQ0MCwianRpIjoiNWZmN2U4NDYtNTgxZC00Mzk3LTg0Y2ItZTQ0YzM1NDFlYThmIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MzY2NTMsIm5iZiI6MTc0ODg0MTQ0MCwiY3NyZiI6IjRlYzM5MzBiLTE3MjktNGQ1Mi04MDE2LWU0ODE5OTc4YjhlZCIsImV4cCI6MTc0OTQ0NjI0MH0.K9A_FcsS-RPy1QxJXAnYdqJmh1FPKU-KQMlnBes25q0')
-    # check_in = HdhiveCheckIn(os.getenv("DAYIMA_TOKEN"))
+    check_in = HdhiveCheckIn(os.getenv("HDHIVE_AUTH"))
     main = check_in.main()
     print(main)
